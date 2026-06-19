@@ -1,10 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ShadowScript</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShadowScript</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#111;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#a855f7;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0a0a0a,#2e1065);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#a855f7;
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+color:white;
+text-decoration:none;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#151515;
+padding:20px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#c084fc;
+margin-bottom:10px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.feature{
+background:#151515;
+padding:25px;
+border-radius:15px;
+}
+
+footer{
+background:#111;
+padding:30px;
+text-align:center;
+margin-top:50px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to ShadowScript!</h1>
-    <p>My website is live! 🚀</p>
+
+<header>
+<div class="logo">ShadowScript</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>ShadowScript</h1>
+<p>Write Beyond Limits.</p>
+<a href="#products" class="btn">Shop Now</a>
+</section>
+
+<section class="section" id="products">
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<h3>📚 Premium Notebooks</h3>
+<p>High-quality notebooks for study and creativity.</p>
+</div>
+
+<div class="card">
+<h3>🖊️ Smooth Pens</h3>
+<p>Comfortable and reliable writing experience.</p>
+</div>
+
+<div class="card">
+<h3>📒 Study Planners</h3>
+<p>Stay organized and productive every day.</p>
+</div>
+
+<div class="card">
+<h3>🎒 Student Kits</h3>
+<p>Everything a student needs in one package.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Why Choose Us?</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>🚚 Fast Delivery</h3>
+<p>Quick and reliable shipping.</p>
+</div>
+
+<div class="feature">
+<h3>💰 Affordable</h3>
+<p>Premium quality at student-friendly prices.</p>
+</div>
+
+<div class="feature">
+<h3>⭐ Quality Products</h3>
+<p>Carefully selected stationery.</p>
+</div>
+
+<div class="feature">
+<h3>🎓 Student Focused</h3>
+<p>Designed for learners and creators.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="about">
+<h2>About Us</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+ShadowScript is a stationery brand created to inspire students,
+creators, and dreamers. Our mission is to provide quality tools
+that help turn ideas into reality.
+</p>
+
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<p style="text-align:center;">
+Email: your@email.com
+<br><br>
+Instagram: @ShadowScript
+</p>
+
+</section>
+
+<footer>
+<p>© 2026 ShadowScript. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
